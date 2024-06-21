@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="mx-auto">
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+    {{ partial "script-footer.html" . }}
+  </footer>
+</body>
+
+</html>
