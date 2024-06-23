@@ -1,16 +1,12 @@
 {{ define "main" }}
 
 <div class="container">
-	<div class="row">
-		<div class="col">
-			<div class="text-center">
-				<h1> {{ .Site.Title }} </h1>
-				<h2> {{ .Params.subtitle }} </h2>
-			</div>
-			{{ .Content }}
-
-		</div>
+	<div class="row col text-center">
+		<h2> {{ .Site.Title }} </h2>
+		<h2 class="text-secondary h3"> {{ .Params.subtitle }} </h2>
 	</div>
+	{{ .Content }}
+
 </div>
 
 {{ end }}

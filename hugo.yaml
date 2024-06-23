@@ -1,0 +1,28 @@
+baseURL: "https://clean.org/"
+languageCode: "en-us"
+title: "Clean site"
+
+menus:
+  main:
+    - name: "Home"
+      pageRef: "/"
+      weight: 10
+    - name: "Posts"
+      pageRef: "/posts"
+      weight: 20
+    - name: "Tags"
+      pageRef: "/tags"
+      weight: 30
+    - name: "Contact"
+      pageRef: "/contact"
+      weight: 40
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.116.0"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -6,13 +6,13 @@
 </head>
 
 <body class="mx-auto">
-  <header>
+  <header class="container">
     {{ partial "header.html" . }}
   </header>
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
+  <footer class="container">
     {{ partial "footer.html" . }}
     {{ partial "script-footer.html" . }}
   </footer>

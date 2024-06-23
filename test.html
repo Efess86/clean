@@ -1,0 +1,91 @@
+<div class="container">
+	<div class="row col text-center">
+		<h1> Clean site </h1>
+		<h2> Learning basics hugo </h2>
+	</div>
+	<h1 id="h1-title">H1 title</h1>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, rem. Temporibus hic nulla magni nostrum quae
+		inventore debitis numquam quod. Maxime molestiae non <em>incidunt</em> excepturi porro veniam
+		<strong>dignissimos</strong> hic in?
+	</p>
+	<h2 id="lists-elems">Lists elems</h2>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+	<ol>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+	<h2 id="link">Link</h2>
+	<p><a href="/tags">go to tags</a></p>
+	<p><a href="https://google.com">go to outside</a></p>
+
+
+</div>
+
+
+
+
+baseURL = 'https://clean.org/'
+languageCode = 'en-us'
+title = 'Clean site'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 40
+
+[module]
+[module.hugoVersion]
+extended = false
+min = "0.116.0"
+
+
+
+
+baseURL: https://clean.org/
+languageCode: en-us
+title: Clean site
+
+menus.main:
+name: Home
+pageRef: /
+weight: 10
+
+menus.main:
+name: Posts
+pageRef: /posts
+weight: 20
+
+menus.main:
+name: Tags
+pageRef: /tags
+weight: 30
+
+menus.main:
+name: Contact
+pageRef: /contact
+weight: 40
+
+module:
+module.hugoVersion:
+extended: false
+min: "0.116.0"
