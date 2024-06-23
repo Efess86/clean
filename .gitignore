@@ -1,0 +1,9 @@
+# Hugo
+public/
+resources/_gen/
+assets/jslib/
+
+# JavaScript
+node_modules/
+npm-debug.log
+yarn-error.log

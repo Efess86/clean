@@ -1,0 +1,37 @@
+{
+  "name": "clean",
+  "version": "1.0.0",
+  "description": "Clean hellas.life",
+  "main": "index.js",
+  "scripts": {
+    "dev": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender",
+    "dev:draft": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender --buildDrafts",
+    "dev:future": "exec-bin node_modules/.bin/hugo/hugo server --gc --disableFastRender --buildFuture",
+    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --cleanDestinationDir --minify",
+    "postinstall": "hugo-installer --version 0.127.0 --extended --destination node_modules/.bin/hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efess86/clean.git"
+  },
+  "keywords": [
+    "SSG",
+    "hugo",
+    "js"
+  ],
+  "author": "V. Kolpaxidis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Efess86/clean/issues"
+  },
+  "homepage": "https://github.com/Efess86/clean#readme",
+  "dependencies": {
+    "exec-bin": "^1.0.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.127.0"
+  },
+  "devDependencies": {
+    "hugo-installer": "^4.0.1"
+  }
+}
